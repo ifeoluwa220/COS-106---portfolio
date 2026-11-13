@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajibade Ifeoluwa | Student Portfolio</title>
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Semantic Header & Navigation Menu -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Ifeoluwa.Cyber</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Welcome! I'm Ajibade Ifeoluwa 👋</h1>
+        <h3>Cybersecurity Student at MIVA Open University</h3>
+        <p>
+          Welcome to my personal academic portfolio and management platform. 
+          I am passionate about securing digital ecosystems, understanding how web technologies work, 
+          and building safer online experiences. When I am not studying network security or coding, 
+          you will find me sightseeing, going on adventures, or listening to great music.
+        </p>
+        <a href="projects.html" class="btn">Explore My Projects</a>
+      </div>
+
+      <!-- Student Photograph (Uses profile.jpg if added, or a backup avatar automatically) -->
+      <div>
+        <img 
+          src="profile.jpg" 
+          onerror="this.src='https://ui-avatars.com/api/?name=Ajibade+Ifeoluwa&background=38bdf8&color=0f172a&size=256'" 
+          alt="Photograph of Ajibade Ifeoluwa" 
+          class="profile-pic"
+        >
+      </div>
+    </section>
+
+    <!-- Multimedia Requirement Section (Audio + Quick Highlights) -->
+    <div class="grid-container">
+      <article class="card">
+        <h3>🎧 My Study Vibe: "Sunny Skies" by Nolan Wren</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1rem;">
+          Listening to music keeps me focused while studying Cybersecurity at MIVA. Press play below to listen to <em>Sunny Skies</em> by Nolan Wren!
+        </p>
+        <audio controls style="width: 100%;">
+          <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+
+      <article class="card">
+        <h3>🛡️ Why Cybersecurity?</h3>
+        <p style="color: var(--text-muted);">
+          Every single day, millions of people trust the internet with their personal data, banking, and messages. I am studying Cybersecurity because I want to be on the frontlines of defending that trust—identifying vulnerabilities, stopping cyber threats, and building web systems that are secure by design.
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <!-- Semantic Footer -->
+  <footer>
+    <p>&copy; 2026 Ajibade Ifeoluwa | MIVA Open University - COS 106 Term Project</p>
+  </footer>
+
+</body>
+</html>

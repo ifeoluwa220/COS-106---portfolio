@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Ajibade Ifeoluwa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Ifeoluwa.Cyber</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" class="active">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Interactive Academic Planner</h1>
+    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+      Manage your daily study goals, track assignments, and keep up with MIVA course deadlines.
+    </p>
+
+    <div class="card">
+      <h3>➕ Add New Academic Task</h3>
+      <div class="planner-input-group">
+        <input type="text" id="taskInput" placeholder="e.g., Complete COS 106 Practical Term Project...">
+        <button id="addTaskBtn" class="btn">Add Task</button>
+      </div>
+
+      <ul id="taskList" class="task-list">
+        <!-- Default sample task -->
+        <li class="task-item">
+          <span>Review Network Security Fundamentals (COS 106)</span>
+          <div class="task-actions">
+            <button class="complete-btn" onclick="this.parentElement.parentElement.classList.toggle('completed')">✓ Done</button>
+            <button class="delete-btn" onclick="this.parentElement.parentElement.remove()">✕ Delete</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ajibade Ifeoluwa | MIVA Open University - COS 106 Term Project</p>
+  </footer>
+
+  <!-- Connect JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
